@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StunFall", "StunFall.csproj", "{2BA3D1A3-74F5-B990-44F9-AA7742403957}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BA3D1A3-74F5-B990-44F9-AA7742403957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BA3D1A3-74F5-B990-44F9-AA7742403957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BA3D1A3-74F5-B990-44F9-AA7742403957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BA3D1A3-74F5-B990-44F9-AA7742403957}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C00C8BE0-1A34-474E-9D4E-573AF86EF7C6}
+	EndGlobalSection
+EndGlobal

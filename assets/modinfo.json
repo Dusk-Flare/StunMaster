@@ -1,0 +1,11 @@
+﻿{
+  "id": "stunfall",
+  "name": "Stun Fall",
+  "version": "0.1.1",
+  "authors": "Dusk Flare",
+  "description": "Drop what you're doing, let's take a nap",
+  "tags": [],
+  "requirements": [],
+  "requirements_names": [],
+  "checksum_override_version": false
+}
