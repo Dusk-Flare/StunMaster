@@ -1,9 +1,13 @@
 ﻿{
   "id": "stunfall",
   "name": "Stun Fall",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "authors": "Dusk Flare",
-  "description": "Drop what you're doing, let's take a nap",
+  "description": "This mod makes you the player, and scavagers drop all your held items when stunned
+-Story item protection can be enabled in the remix menu
+-Lizard grace period can be disabled in the remix menu
+-King Vulture tusks can now be knocked out with a stun
+(Might add a negative score on scav reputation per item dropped in the future, not for now though)",
   "tags": [],
   "requirements": [],
   "requirements_names": [],
