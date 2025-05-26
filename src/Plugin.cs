@@ -54,6 +54,7 @@ sealed class Plugin : BaseUnityPlugin
 
         if (self.stun > 0)
         {
+            self.tongue?.Release();
             for (int i = self.grasps.Length - 1; i >= 0; i--)
             {
                 if (self.grasps[i] != null)

@@ -1,12 +1,12 @@
 ﻿{
   "id": "stunfall",
   "name": "Stun Fall",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "authors": "Dusk Flare",
   "description": "This mod makes you the player, and scavagers drop all your held items when stunned
 -Story item protection can be enabled in the remix menu
 -Lizard grace period can be disabled in the remix menu
--King Vulture tusks can now be knocked out with a stun
+-slugcat toungue now releases when stunned
 (Might add a negative score on scav reputation per item dropped in the future, not for now though)",
   "tags": [],
   "requirements": [],
