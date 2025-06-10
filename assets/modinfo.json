@@ -1,15 +1,11 @@
 ﻿{
-  "id": "stunfall",
-  "name": "Stun Fall",
-  "version": "0.1.5",
+  "id": "stunmaster",
+  "name": "Stun Master",
+  "version": "0.1.4",
   "authors": "Dusk Flare",
-  "description": "This mod makes you the player, and scavagers drop all your held items when stunned
--Story item protection can be enabled in the remix menu
--Lizard grace period can be disabled in the remix menu
--slugcat toungue now releases when stunned
-(Might add a negative score on scav reputation per item dropped in the future, not for now though)",
-  "tags": [],
-  "requirements": [],
+  "description": "A powerful yet frail slugcat capable of stunning enemies at the cost of food, comes from an iterator far away, to check on the wellbeing of moon and pebbles.\n\nNeurons are now abble to be ridden like jetfish, yes you read that right!\n(campain is still under construction, and weight mechanic is still limited to The Stunmaster's campain due to meadow)",
+  "tags": [ "Custom Slugcat" ],
+  "requirements": [ "slime-cubed.slugbase", "stunfall" ],
   "requirements_names": [],
   "checksum_override_version": false
 }

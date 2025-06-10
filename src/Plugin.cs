@@ -1,37 +1,32 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
-using IL.JollyCoop.JollyMenu;
-using MoreSlugcats;
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices.ComTypes;
 using System.Security.Permissions;
 using UnityEngine;
-using static Creature;
 
-// Allows access to private members
+
 #pragma warning disable CS0618
 [assembly: SecurityPermission(SecurityAction.RequestMinimum, SkipVerification = true)]
 #pragma warning restore CS0618
 
-namespace StunFall;
+namespace StunMaster;
 
-[BepInPlugin("com.author.stunfall", "Stun Fall", "0.1.0")]
+[BepInPlugin("com.author.stunmaster", "Stun Master", "0.1.0")]
 sealed class Plugin : BaseUnityPlugin
 {
     public static new ManualLogSource Logger;
+    public static Dictionary<Player, float> stunCooldowns = [];
     bool IsInit;
-    public OptionsMenu OIinstance = new();
 
     public void OnEnable()
     {
-        
         Logger = base.Logger;
+        On.Player.Update += Player_Update;
         On.RainWorld.OnModsInit += OnModsInit;
-        On.Player.Update += PlayerDrop;
-        On.Scavenger.Update += ScavDrop;
-        On.Vulture.Update += KingVultureDrop;
+        On.SSOracleBehavior.NewAction += CustomIteratorDialogue;
+        On.SSOracleSwarmer.Update += NeuronOverride;
     }
+
 
     private void OnModsInit(On.RainWorld.orig_OnModsInit orig, RainWorld self)
     {
@@ -39,77 +34,47 @@ sealed class Plugin : BaseUnityPlugin
 
         if (IsInit) return;
         IsInit = true;
-
-        MachineConnector.SetRegisteredOI("stunfall", OIinstance);
     }
-
-    private void PlayerDrop(On.Player.orig_Update orig, Player self, bool eu)
+    private void Player_Update(On.Player.orig_Update orig, Player self, bool eu)
     {
         orig(self, eu);
+        if (!stunCooldowns.ContainsKey(self)) stunCooldowns[self] = 0f;
+        if (stunCooldowns.ContainsKey(self) && stunCooldowns[self] > 0f) stunCooldowns[self]--;
 
-        if(self.grabbedBy.Any(grasp => grasp.grabber is Lizard) && !OIinstance.LGP.Value)
+        if (self.slugcatStats.name.value == "stunmaster")
         {
-            return;
-        }
-
-        if (self.stun > 0)
-        {
-            self.tongue?.Release();
-            for (int i = self.grasps.Length - 1; i >= 0; i--)
+            if (self.input[0].jmp && self.input[0].pckp && (!self.input[1].jmp || !self.input[1].pckp))
             {
-                if (self.grasps[i] != null)
+                bool isArena = self.room?.game != null && self.room.game.IsArenaSession;
+                if (isArena)
                 {
-                    if (OIinstance.DSI.Value)
-                    {
-                        self.ReleaseGrasp(i);
-                    }
-                    else
-                    {
-                        PhysicalObject item = self.grasps[i].grabbed;
-                        if (item is not EnergyCell && item is not NSHSwarmer && item is not SpearMasterPearl)
-                        {
-                            self.ReleaseGrasp(i);
-                        }
-                    }
+                    StunPower.TriggerArenaStun(self, 7, 3, 2);
                 }
-            }
-
-        }
-    }
-
-    private void ScavDrop(On.Scavenger.orig_Update orig, Scavenger self, bool eu)
-    {
-        orig(self, eu);
-
-        if (self.stun > 0)
-        {
-            for (int i = self.grasps.Length - 1; i >= 0; i--)
-            {
-                if (self.grasps[i] != null)
+                else
                 {
-                    self.ReleaseGrasp(i);
-                }
-            }
-
-        }
-    }
-
-    private void KingVultureDrop(On.Vulture.orig_Update orig, Vulture self, bool eu)
-    {
-        orig(self, eu);
-
-        if (self.Template.type == CreatureTemplate.Type.KingVulture && self.stun > 20)
-        {
-            for (int i = self.kingTusks.tusks.Length - 1; i >= 0; i--)
-            {
-                var tusk = self.kingTusks.tusks[i];
-                if (tusk != null)
-                {
-                    tusk.SwitchMode(KingTusks.Tusk.Mode.Dangling);
-                    tusk.currWireLength = 500f;
+                    StunPower.TriggerStoryStun(self, 7, 2);
                 }
             }
         }
     }
 
+    private void NeuronOverride(On.SSOracleSwarmer.orig_Update orig, SSOracleSwarmer self, bool eu)
+    {
+        orig(self, eu);
+        Player player = self.grabbedBy.Count > 0 ? self.grabbedBy[0].grabber as Player : null;
+        NeuronPathing.NeuronControll(self, player);
+    }
+
+
+
+
+    private void CustomIteratorDialogue(On.SSOracleBehavior.orig_NewAction orig, SSOracleBehavior self, SSOracleBehavior.Action action)
+    {
+        orig(self, action);
+        return; // Disable all iterator dialogue
+        var metBefore = self.oracle?.room?.game?.GetStorySession?.saveState?.miscWorldSaveData?.SSaiThrowOuts;
+        if (self.oracle.room.game.StoryCharacter.value != "stunmaster" || metBefore > 0) orig(self, action);
+        StunDialog.MeetPebbles(self, action);
+        orig(self, action);
+    }
 }

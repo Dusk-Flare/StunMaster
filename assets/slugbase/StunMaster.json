@@ -1,0 +1,37 @@
+{
+  "id": "stunmaster",
+  "name": "The Stunmaster",
+  "description": "A weak and frail with the ability to temporarily incapacitate enemies.",
+  "features": {
+    "color": "FF0000",
+    "custom_colors": [
+      { "name": "Body", "story": "FFFFFF" },
+      { "name": "Eyes", "story": "FF0000" }
+    ],
+    "start_room": "OE_S03",
+    "the_mark": true,
+    "the_glow": true,
+    "auto_grab_batflies": false,
+    "karma": 4,
+    "weight": 0.25,
+    "back_spear": true,
+    "food_min": 6,
+    "food_max": 8,
+    "world_state": [ "stunmaster" ],
+    "loudness": 5,
+    "throw_skill": 0,
+    "guide_overseer": 4,
+    "alignments": {
+      "Lizards": {"like":-1, "strenght": 0.2},
+      "Scavengers": { "like": -0.1, "strength": 0.2 }
+    },
+    "diet": {
+      "base": "red",
+      "corpses": 1.5,
+      "meat": 1,
+      "plants": 0.5,
+      "overrides": { "scavenger": 2, "Danglefruit": 1 }
+    }, 
+    "select_menu_scene": "stunmaster_select"
+  }
+}

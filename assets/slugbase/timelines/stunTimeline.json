@@ -1,0 +1,5 @@
+{
+  "id": "stunTimeline",
+  "base": [ "spearmaster", "red" ],
+  "insert_before": "red"
+}
