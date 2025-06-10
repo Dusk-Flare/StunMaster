@@ -1,0 +1,10 @@
+C:\Users\redst\OneDrive\Documentos\GitHub\StunMaster\mod\newest\plugins\StunMaster.dll
+C:\Users\redst\OneDrive\Documentos\GitHub\StunMaster\mod\newest\plugins\StunMaster.pdb
+C:\Users\redst\OneDrive\Documentos\GitHub\StunMaster\src\obj\Debug\StunMaster.csproj.AssemblyReference.cache
+C:\Users\redst\OneDrive\Documentos\GitHub\StunMaster\src\obj\Debug\StunMaster.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\redst\OneDrive\Documentos\GitHub\StunMaster\src\obj\Debug\StunMaster.AssemblyInfoInputs.cache
+C:\Users\redst\OneDrive\Documentos\GitHub\StunMaster\src\obj\Debug\StunMaster.AssemblyInfo.cs
+C:\Users\redst\OneDrive\Documentos\GitHub\StunMaster\src\obj\Debug\StunMaster.csproj.CoreCompileInputs.cache
+C:\Users\redst\OneDrive\Documentos\GitHub\StunMaster\src\obj\Debug\StunMaster.sourcelink.json
+C:\Users\redst\OneDrive\Documentos\GitHub\StunMaster\src\obj\Debug\StunMaster.dll
+C:\Users\redst\OneDrive\Documentos\GitHub\StunMaster\src\obj\Debug\StunMaster.pdb

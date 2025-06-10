@@ -1,0 +1,11 @@
+﻿{
+  "id": "stunmaster",
+  "name": "Stun Master",
+  "version": "0.1.4",
+  "authors": "Dusk Flare",
+  "description": "A powerful yet frail slugcat capable of stunning enemies at the cost of food, comes from an iterator far away, to check on the wellbeing of moon and pebbles.\n\nNeurons are now abble to be ridden like jetfish, yes you read that right!\n(campain is still under construction, and weight mechanic is still limited to The Stunmaster's campain due to meadow)",
+  "tags": [ "Custom Slugcat" ],
+  "requirements": [ "slime-cubed.slugbase", "stunfall" ],
+  "requirements_names": [],
+  "checksum_override_version": false
+}
