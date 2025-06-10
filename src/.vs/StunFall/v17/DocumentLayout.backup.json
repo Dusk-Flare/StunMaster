@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunFall\\src\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA3D1A3-74F5-B990-44F9-AA7742403957}|StunFall.csproj|c:\\users\\redst\\onedrive\\documentos\\github\\stunfall\\src\\plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA3D1A3-74F5-B990-44F9-AA7742403957}|StunFall.csproj|solutionrelative:plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA3D1A3-74F5-B990-44F9-AA7742403957}|StunFall.csproj|c:\\users\\redst\\onedrive\\documentos\\github\\stunfall\\src\\optionsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA3D1A3-74F5-B990-44F9-AA7742403957}|StunFall.csproj|solutionrelative:optionsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA3D1A3-74F5-B990-44F9-AA7742403957}|StunFall.csproj|c:\\users\\redst\\onedrive\\documentos\\github\\stunfall\\src\\stunfall.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2BA3D1A3-74F5-B990-44F9-AA7742403957}|StunFall.csproj|solutionrelative:stunfall.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 186,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OptionsMenu.cs",
+              "DocumentMoniker": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunFall\\src\\OptionsMenu.cs",
+              "RelativeDocumentMoniker": "OptionsMenu.cs",
+              "ToolTip": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunFall\\src\\OptionsMenu.cs",
+              "RelativeToolTip": "OptionsMenu.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T15:31:44.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Plugin.cs",
+              "DocumentMoniker": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunFall\\src\\Plugin.cs",
+              "RelativeDocumentMoniker": "Plugin.cs",
+              "ToolTip": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunFall\\src\\Plugin.cs",
+              "RelativeToolTip": "Plugin.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwDcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T19:25:55.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StunFall.csproj",
+              "DocumentMoniker": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunFall\\src\\StunFall.csproj",
+              "RelativeDocumentMoniker": "StunFall.csproj",
+              "ToolTip": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunFall\\src\\StunFall.csproj",
+              "RelativeToolTip": "StunFall.csproj",
+              "ViewState": "AgIAABQAAAAAAAAAAADwvx8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-19T15:40:43.172Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
