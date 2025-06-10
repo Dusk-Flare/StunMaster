@@ -1,0 +1,10 @@
+C:\Users\redst\OneDrive\Documentos\GitHub\StunFall\src\obj\Debug\StunFall.csproj.AssemblyReference.cache
+C:\Users\redst\OneDrive\Documentos\GitHub\StunFall\src\obj\Debug\StunFall.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\redst\OneDrive\Documentos\GitHub\StunFall\src\obj\Debug\StunFall.AssemblyInfoInputs.cache
+C:\Users\redst\OneDrive\Documentos\GitHub\StunFall\src\obj\Debug\StunFall.AssemblyInfo.cs
+C:\Users\redst\OneDrive\Documentos\GitHub\StunFall\src\obj\Debug\StunFall.csproj.CoreCompileInputs.cache
+C:\Users\redst\OneDrive\Documentos\GitHub\StunFall\src\obj\Debug\StunFall.sourcelink.json
+C:\Users\redst\OneDrive\Documentos\GitHub\StunFall\mod\newest\plugins\StunFall.dll
+C:\Users\redst\OneDrive\Documentos\GitHub\StunFall\mod\newest\plugins\StunFall.pdb
+C:\Users\redst\OneDrive\Documentos\GitHub\StunFall\src\obj\Debug\StunFall.dll
+C:\Users\redst\OneDrive\Documentos\GitHub\StunFall\src\obj\Debug\StunFall.pdb
