@@ -3,111 +3,269 @@
   "WorkspaceRootPath": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\assets\\modinfo.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|c:\\users\\redst\\onedrive\\documentos\\github\\stunmaster\\src\\stuncompat\\onlinedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|solutionrelative:stuncompat\\onlinedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|c:\\users\\redst\\onedrive\\documentos\\github\\stunmaster\\src\\neuronpathing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|solutionrelative:neuronpathing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|c:\\users\\redst\\onedrive\\documentos\\github\\stunmaster\\src\\optionsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|solutionrelative:optionsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|c:\\users\\redst\\onedrive\\documentos\\github\\stunmaster\\src\\stunlogic\\stundialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|solutionrelative:stunlogic\\stundialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|c:\\users\\redst\\onedrive\\documentos\\github\\stunmaster\\src\\stunobjects\\abstractstunspear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|solutionrelative:stunobjects\\abstractstunspear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|c:\\users\\redst\\onedrive\\documentos\\github\\stunmaster\\src\\stunlogic\\legacystun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|solutionrelative:stunlogic\\legacystun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|c:\\users\\redst\\onedrive\\documentos\\github\\stunmaster\\src\\plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|solutionrelative:plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|c:\\users\\redst\\onedrive\\documentos\\github\\stunmaster\\src\\stunlogic\\pebblesexternals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|solutionrelative:stunlogic\\pebblesexternals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|c:\\users\\redst\\onedrive\\documentos\\github\\stunmaster\\src\\stunlogic\\stunpowers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|solutionrelative:stunlogic\\stunpowers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|c:\\users\\redst\\onedrive\\documentos\\github\\stunmaster\\src\\stunobjects\\stunspear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|solutionrelative:stunobjects\\stunspear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\Rain World\\RainWorld_Data\\StreamingAssets\\mods\\StunMaster\\modinfo.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\assets\\modinfo.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|c:\\users\\redst\\onedrive\\documentos\\github\\stunmaster\\src\\stuncompat\\compatibilityaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|solutionrelative:stuncompat\\compatibilityaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\assets\\slugbase\\StunMaster.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|c:\\users\\redst\\onedrive\\documentos\\github\\stunmaster\\src\\stunlogic\\neuronpathing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|solutionrelative:stunlogic\\neuronpathing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|c:\\users\\redst\\onedrive\\documentos\\github\\stunmaster\\src\\stunmaster.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|solutionrelative:stunmaster.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|c:\\users\\redst\\onedrive\\documentos\\github\\stunmaster\\src\\stundialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|solutionrelative:stundialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|c:\\users\\redst\\onedrive\\documentos\\github\\stunmaster\\src\\stunpower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F01035D0-7163-83CB-6B1F-3DAF86D6EBB9}|StunMaster.csproj|solutionrelative:stunpower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 203,
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Plugin.cs",
               "DocumentMoniker": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\Plugin.cs",
               "RelativeDocumentMoniker": "Plugin.cs",
               "ToolTip": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\Plugin.cs",
               "RelativeToolTip": "Plugin.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAAABoAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCMAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-31T22:39:46.586Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NeuronPathing.cs",
-              "DocumentMoniker": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\NeuronPathing.cs",
-              "RelativeDocumentMoniker": "NeuronPathing.cs",
-              "ToolTip": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\NeuronPathing.cs",
-              "RelativeToolTip": "NeuronPathing.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwA4AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T17:42:16.015Z"
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "StunDialog.cs",
-              "DocumentMoniker": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunDialog.cs",
-              "RelativeDocumentMoniker": "StunDialog.cs",
-              "ToolTip": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunDialog.cs",
-              "RelativeToolTip": "StunDialog.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAABUAAAAAAAAAA==",
+              "Title": "LegacyStun.cs",
+              "DocumentMoniker": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunLogic\\LegacyStun.cs",
+              "RelativeDocumentMoniker": "StunLogic\\LegacyStun.cs",
+              "ToolTip": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunLogic\\LegacyStun.cs",
+              "RelativeToolTip": "StunLogic\\LegacyStun.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T02:26:02.757Z"
+              "WhenOpened": "2025-06-09T00:29:48.083Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StunPower.cs",
-              "DocumentMoniker": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunPower.cs",
-              "RelativeDocumentMoniker": "StunPower.cs",
-              "ToolTip": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunPower.cs",
-              "RelativeToolTip": "StunPower.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowAUAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "StunPowers.cs",
+              "DocumentMoniker": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunLogic\\StunPowers.cs",
+              "RelativeDocumentMoniker": "StunLogic\\StunPowers.cs",
+              "ToolTip": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunLogic\\StunPowers.cs",
+              "RelativeToolTip": "StunLogic\\StunPowers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T00:29:48.083Z"
+              "WhenOpened": "2025-09-22T13:26:55.78Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StunDialog.cs",
+              "DocumentMoniker": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunLogic\\StunDialog.cs",
+              "RelativeDocumentMoniker": "StunLogic\\StunDialog.cs",
+              "ToolTip": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunLogic\\StunDialog.cs",
+              "RelativeToolTip": "StunLogic\\StunDialog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T14:33:43.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PebblesExternals.cs",
+              "DocumentMoniker": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunLogic\\PebblesExternals.cs",
+              "RelativeDocumentMoniker": "StunLogic\\PebblesExternals.cs",
+              "ToolTip": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunLogic\\PebblesExternals.cs",
+              "RelativeToolTip": "StunLogic\\PebblesExternals.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T14:29:35.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "modinfo.json",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Rain World\\RainWorld_Data\\StreamingAssets\\mods\\StunMaster\\modinfo.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Program Files (x86)\\Steam\\steamapps\\common\\Rain World\\RainWorld_Data\\StreamingAssets\\mods\\StunMaster\\modinfo.json",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Rain World\\RainWorld_Data\\StreamingAssets\\mods\\StunMaster\\modinfo.json",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Program Files (x86)\\Steam\\steamapps\\common\\Rain World\\RainWorld_Data\\StreamingAssets\\mods\\StunMaster\\modinfo.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-21T21:08:37.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StunSpear.cs",
+              "DocumentMoniker": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunObjects\\StunSpear.cs",
+              "RelativeDocumentMoniker": "StunObjects\\StunSpear.cs",
+              "ToolTip": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunObjects\\StunSpear.cs",
+              "RelativeToolTip": "StunObjects\\StunSpear.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwK4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T02:10:32.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AbstractStunSpear.cs",
+              "DocumentMoniker": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunObjects\\AbstractStunSpear.cs",
+              "RelativeDocumentMoniker": "StunObjects\\AbstractStunSpear.cs",
+              "ToolTip": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunObjects\\AbstractStunSpear.cs",
+              "RelativeToolTip": "StunObjects\\AbstractStunSpear.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T19:28:59.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OptionsMenu.cs",
+              "DocumentMoniker": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\OptionsMenu.cs",
+              "RelativeDocumentMoniker": "OptionsMenu.cs",
+              "ToolTip": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\OptionsMenu.cs",
+              "RelativeToolTip": "OptionsMenu.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T17:45:55.695Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "OnlineData.cs",
+              "DocumentMoniker": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunCompat\\OnlineData.cs",
+              "RelativeDocumentMoniker": "StunCompat\\OnlineData.cs",
+              "ToolTip": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunCompat\\OnlineData.cs",
+              "RelativeToolTip": "StunCompat\\OnlineData.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T17:31:59.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CompatibilityAccess.cs",
+              "DocumentMoniker": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunCompat\\CompatibilityAccess.cs",
+              "RelativeDocumentMoniker": "StunCompat\\CompatibilityAccess.cs",
+              "ToolTip": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunCompat\\CompatibilityAccess.cs",
+              "RelativeToolTip": "StunCompat\\CompatibilityAccess.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T17:28:43.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StunMaster.json",
+              "DocumentMoniker": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\assets\\slugbase\\StunMaster.json",
+              "RelativeDocumentMoniker": "..\\assets\\slugbase\\StunMaster.json",
+              "ToolTip": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\assets\\slugbase\\StunMaster.json",
+              "RelativeToolTip": "..\\assets\\slugbase\\StunMaster.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-12T15:02:16.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NeuronPathing.cs",
+              "DocumentMoniker": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunLogic\\NeuronPathing.cs",
+              "RelativeDocumentMoniker": "StunLogic\\NeuronPathing.cs",
+              "ToolTip": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunLogic\\NeuronPathing.cs",
+              "RelativeToolTip": "StunLogic\\NeuronPathing.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAWwC0AAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T17:42:16.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "modinfo.json",
               "DocumentMoniker": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\assets\\modinfo.json",
               "RelativeDocumentMoniker": "..\\assets\\modinfo.json",
               "ToolTip": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\assets\\modinfo.json",
               "RelativeToolTip": "..\\assets\\modinfo.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-06-07T19:49:57.887Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
               "Title": "StunMaster.csproj",
               "DocumentMoniker": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunMaster.csproj",
               "RelativeDocumentMoniker": "StunMaster.csproj",
               "ToolTip": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunMaster.csproj",
               "RelativeToolTip": "StunMaster.csproj",
-              "ViewState": "AgIAABMAAAAAAAAAAABBwBsAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-31T22:39:25.499Z"
+              "WhenOpened": "2025-05-31T22:39:25.499Z",
+              "EditorCaption": ""
             }
           ]
         }

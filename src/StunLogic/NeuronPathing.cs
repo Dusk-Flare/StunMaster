@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 using UnityEngine;
 using static SSOracleSwarmer;
 
-namespace StunMaster
+namespace StunMaster.StunLogic
 {
     internal static class NeuronPathing
     {
-        internal static MovementMode Controlled = new MovementMode("Controlled", register: true);
+        internal static MovementMode Controlled = new("Controlled", register: true);
 
         internal static void NeuronControll(SSOracleSwarmer self, Player controller)
         {
@@ -32,7 +32,7 @@ namespace StunMaster
                 if (inputDir != Vector2.zero)
                 {
                     self.mode = Controlled;
-                    self.color = new Vector2((float)UnityEngine.Random.Range(0, 3) / 2f, (UnityEngine.Random.value < 0.75f) ? 0f : 1f);
+                    self.color = new Vector2(UnityEngine.Random.Range(0, 3) / 2f, UnityEngine.Random.value < 0.75f ? 0f : 1f);
                     self.travelDirection = inputDir;
                     self.firstChunk.vel += inputDir * accel;
 
@@ -41,8 +41,9 @@ namespace StunMaster
 
                     self.rotation = Mathf.Atan2(inputDir.y, inputDir.x);
                 }
-                else if (self.mode == Controlled)self.mode = SSOracleSwarmer.MovementMode.Swarm;
+                else if (self.mode == Controlled) self.mode = MovementMode.Swarm;
             }
+            else if (self.mode == Controlled) self.mode = MovementMode.Swarm;
         }
 
     }

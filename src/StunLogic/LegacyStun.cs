@@ -1,9 +1,13 @@
-﻿using UnityEngine;
+﻿using StunMaster.StunCompat;
+using System.Runtime.CompilerServices;
+using UnityEngine;
 
-namespace StunMaster
+namespace StunMaster.StunLogic
 {
-    internal class StunPower
+    internal class LegacyStun
     {
+        private static readonly string customSlugcatName = "stunmaster";
+
         internal static void TriggerStoryStun(Player self, int stunRadius, int stunDuration)
         {
             int stunDurationFrames = stunDuration * 40;
@@ -11,21 +15,7 @@ namespace StunMaster
 
             if (self.FoodInStomach < 1) return;
             self.SubtractFood(1);
-            StunEffects(self, stunRadiusPixels);
-
-            foreach (var creature in self.room.abstractRoom.creatures)
-            {
-                if (creature.realizedCreature != null && creature.realizedCreature != self)
-                {
-                    float dist = Vector2.Distance(self.mainBodyChunk.pos, creature.realizedCreature.mainBodyChunk.pos);
-
-                    if (dist < stunRadiusPixels)
-                    {
-                        if (creature.realizedCreature is Player player && (player.slugcatStats.name.value == "stunmaster")) return;
-                        creature.realizedCreature.Violence(self.mainBodyChunk, null, null, null, Creature.DamageType.Explosion, 0f, stunDurationFrames);
-                    }
-                }
-            }
+            StunArea(self, stunRadiusPixels, stunDurationFrames);
         }
         internal static void TriggerArenaStun(Player self, int stunRadius, int stunCooldown, int stunDuration)
         {
@@ -34,23 +24,29 @@ namespace StunMaster
             int stunRadiusPixels = stunRadius * 20;
 
             if (Plugin.stunCooldowns[self] > 0) return;
+            if (CompatibilityAccess.IsMeadowArena() && !CompatibilityAccess.IsArenaBattleEnabled()) return;
             Plugin.stunCooldowns[self] = stunCooldownFrames;
-            StunEffects(self, stunRadiusPixels);
+            StunArea(self, stunRadiusPixels, stunDurationFrames);
+        }
 
+        private static void StunArea(Player self, int stunRadiusPixels, int stunDurationFrames, float violenceStrength = 0f)
+        {
+            StunEffects(self, stunRadiusPixels);
             foreach (var creature in self.room.abstractRoom.creatures)
             {
-                if (creature.realizedCreature != null && creature.realizedCreature != self)
+                Creature victim = creature.realizedCreature;
+                if (victim != null && creature.realizedCreature != self)
                 {
-                    float dist = Vector2.Distance(self.mainBodyChunk.pos, creature.realizedCreature.mainBodyChunk.pos);
-
+                    float dist = Vector2.Distance(self.mainBodyChunk.pos, victim.mainBodyChunk.pos);
                     if (dist < stunRadiusPixels)
                     {
-                        if (creature.realizedCreature is Player player && (player.slugcatStats.name.value == "stunmaster")) return;
-                        creature.realizedCreature.Violence(self.mainBodyChunk, null, null, null, Creature.DamageType.Explosion, 0f, stunDurationFrames);
+                        if (victim is Player player && player.slugcatStats.name.value == customSlugcatName) continue;
+                        victim.Violence(self.mainBodyChunk, null, victim.mainBodyChunk, null, Creature.DamageType.Explosion, violenceStrength, stunDurationFrames);
                     }
                 }
             }
         }
+
         internal static void StunEffects(Player self, int stunRadiusPixels)
         {
             var room = self.room;

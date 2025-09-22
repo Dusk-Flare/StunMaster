@@ -1,11 +1,11 @@
 ﻿{
+  "authors": "Dusk Flare",
+  "checksum_override_version": false,
+  "description": "A powerful yet frail slugcat capable of stunning enemies at the cost of food, comes from an iterator far away, to check on the wellbeing of moon and pebbles.\n\nAdded legacy power selector on remix menu, currently it only acts as a way to disable Stunmaster's habilities, but in the future it will act as a way to switch to a new power system i am currently working on, stay tuned'\n(campain is still under construction)",
   "id": "stunmaster",
   "name": "Stun Master",
-  "version": "0.1.4",
-  "authors": "Dusk Flare",
-  "description": "A powerful yet frail slugcat capable of stunning enemies at the cost of food, comes from an iterator far away, to check on the wellbeing of moon and pebbles.\n\nNeurons are now abble to be ridden like jetfish, yes you read that right!\n(campain is still under construction, and weight mechanic is still limited to The Stunmaster's campain due to meadow)",
-  "tags": [ "Custom Slugcat" ],
   "requirements": [ "slime-cubed.slugbase", "stunfall" ],
   "requirements_names": [],
-  "checksum_override_version": false
+  "tags": [ "Custom Slugcat" ],
+  "version": "0.1.8"
 }
