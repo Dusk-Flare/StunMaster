@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StunMaster")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db444b95c2ba81e68548c47d12f1b852800a6c3f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+372e0d9eaee42a986554470e7d4152fcb38982f0")]
 [assembly: System.Reflection.AssemblyProductAttribute("StunMaster")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StunMaster")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
