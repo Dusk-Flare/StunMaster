@@ -47,9 +47,6 @@
     <Reference Include="..\lib\PUBLIC-Assembly-CSharp.dll">
       <Private>false</Private>
     </Reference>
-    <Reference Include="..\lib\Rain Meadow.dll">
-      <Private>false</Private>
-    </Reference>
     <Reference Include="..\lib\Unity.Mathematics.dll">
       <Private>false</Private>
     </Reference>
@@ -61,6 +58,9 @@
     </Reference>
     <Reference Include="ImprovedInput">
       <HintPath>..\..\..\..\..\source\externalDLLs\InprovedInput\ImprovedInput.dll</HintPath>
+    </Reference>
+    <Reference Include="Rain Meadow">
+      <HintPath>..\..\..\..\..\source\externalDLLs\RainMeadow\Rain Meadow.dll</HintPath>
     </Reference>
     <Reference Include="SlugBase">
       <HintPath>..\..\..\..\..\source\externalDLLs\SlugBase\SlugBase.dll</HintPath>

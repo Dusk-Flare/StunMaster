@@ -1,7 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using static StunMaster.Utils.StunCooldowns;
 
 namespace StunMaster.Utils
 {
@@ -25,11 +23,11 @@ namespace StunMaster.Utils
                 Cooldowns[player] = value;
             }
         }
-
-        public void Stun(StunPlayer player, float stunTime) => Cooldowns.Add(player, stunTime);
+        public bool TryGetStun(StunPlayer player, out float stunTrime) => Cooldowns.TryGetValue(player, out stunTrime);
+        public void Stun(StunPlayer player, float stunTime) => Cooldowns[player] = stunTime;
         public float GetOrStun(StunPlayer player, float stunTime)
         {
-            if (!Contains(player)) Stun(player, stunTime);
+            if (!TryGetStun(player, out float stunTicks) || stunTicks <= 0) Stun(player, stunTime);
             return Cooldowns[player];
         }
 

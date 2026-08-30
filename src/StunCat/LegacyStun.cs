@@ -20,8 +20,9 @@ namespace StunMaster.StunCat
             int stunDurationFrames = stunDuration * 40;
             float stunCooldownFrames = stunCooldown * 40f;
             int stunRadiusPixels = stunRadius * 20;
-
-            if (StunInputs.StunEntries.GetOrStun(self, 0) > 0) return;
+            float currStun = StunInputs.StunEntries.GetOrStun(self, 0);
+            Plugin.Logger.LogInfo(currStun);
+            if (currStun > 0) return;
             if (CompatibilityAccess.IsMeadowArena() && !CompatibilityAccess.IsArenaBattleEnabled()) return;
             StunInputs.StunEntries.Stun(self, stunCooldownFrames);
             StunArea(self, stunRadiusPixels, stunDurationFrames);

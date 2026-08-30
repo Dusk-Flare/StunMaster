@@ -17,7 +17,7 @@ namespace StunMaster.Config
 
             options = [
                 new OpCheckBox(LPC, new(0f, 475f)),
-                new OpLabel(new(0f, 500f), new(600f, 30f), "Disable Stun Powers", FLabelAlignment.Left, true),
+                new OpLabel(new(0f, 500f), new(600f, 30f), "Enable Stun Powers", FLabelAlignment.Left, true),
             ];
 
             optionsTab.AddItems(options);

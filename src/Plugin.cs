@@ -1,5 +1,6 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
+using ImprovedInput;
 using MonoMod.RuntimeDetour;
 using StunMaster.Config;
 using StunMaster.Hooks;
@@ -8,6 +9,7 @@ using StunMaster.StunCompat;
 using System;
 using System.Reflection;
 using System.Security.Permissions;
+using UnityEngine;
 
 
 #pragma warning disable CS0618
@@ -28,6 +30,7 @@ public static class PluginData
 sealed class Plugin : BaseUnityPlugin
 {
     public static new ManualLogSource Logger;
+    public static readonly PlayerKeybind stunTrigger = PlayerKeybind.Register("stun:bind", PluginData.ModName, "StunAbility", KeyCode.C, KeyCode.JoystickButton5);
     public static AbstractPhysicalObject.AbstractObjectType stunSpear = new("StunSpear", true);
     public static ReturnData OnlineData;
     public static OptionsMenu OIinstance = new();
