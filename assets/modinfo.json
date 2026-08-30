@@ -1,11 +1,11 @@
 ﻿{
-  "authors": "Dusk Flare",
+  "authors": "Lanta",
   "checksum_override_version": false,
   "description": "A powerful yet frail slugcat capable of stunning enemies at the cost of food, comes from an iterator far away, to check on the wellbeing of moon and pebbles.\n\nAdded legacy power selector on remix menu, currently it only acts as a way to disable Stunmaster's habilities, but in the future it will act as a way to switch to a new power system i am currently working on, stay tuned'\n(campain is still under construction)",
   "id": "stunmaster",
   "name": "Stun Master",
-  "requirements": [ "slime-cubed.slugbase", "stunfall" ],
-  "requirements_names": [],
+  "requirements": [ "slime-cubed.slugbase", "improved-input-config", "stunfall" ],
+  "requirements_names": [ "SlugBase", "Improved Input Config", "Stun Fall" ],
   "tags": [ "Custom Slugcat" ],
-  "version": "0.1.8"
+  "version": "0.1.9"
 }

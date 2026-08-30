@@ -6,8 +6,8 @@ namespace StunMaster.StunLogic
 {
     internal static class StunDialog
     {
-        public static readonly ID StunPebbles = new("StunPebbles", true);
-        public static readonly ID StunMoon = new("StunMoon", true);
+        public static readonly ID StunPebbles = new("StunPebbles", register: true);
+        public static readonly ID StunMoon = new("StunMoon", register: true);
         public static readonly Dictionary<SSOracleBehavior, bool> ReadyToThrowOut = [];
 
         internal static void MeetPebbles(SSOracleBehavior self)
@@ -15,13 +15,13 @@ namespace StunMaster.StunLogic
             if (self?.dialogBox == null) return;
             if (self.currSubBehavior is not ConversationBehavior convBehav) return;
 
-            var convo = new PebblesConversation(self, convBehav, StunPebbles, self.dialogBox);
+            PebblesConversation convo = new(self, convBehav, StunPebbles, self.dialogBox);
             self.action = Action.General_Idle;
             convo.events.Add(new TextEvent(convo, 0, "Ah, the 'stunmaster'.", 40));
-            convo.events.Add(new TextEvent(convo, 0, "Why did the iterator 'Flares of Dusk' send you here?", 60));
+            convo.events.Add(new TextEvent(convo, 0, "Why did the Flares of Dusk send you here?", 60));
             convo.events.Add(new TextEvent(convo, 0, "I'm fine, if you must know.", 40));
-            convo.events.Add(new TextEvent(convo, 0, "But you should leave before I decide to put an end to your current cycle.", 60));
-            convo.events.Add(new TextEvent(convo, 0, "I don't care what your Flares said, leave me alone at once, I will not ask again.", 40));
+            convo.events.Add(new TextEvent(convo, 0, "However, you should leave, i have work i must tend to.", 60));
+            convo.events.Add(new TextEvent(convo, 0, "I don't care what Flares said, leave me alone at once, I will not ask again.", 40));
             if (self.conversation == null) self.conversation.paused = true;
             convo.events.Add(new WaitEvent(convo, 80));
             convo.events.Add(new EndConversationEvent(convo, self, () =>

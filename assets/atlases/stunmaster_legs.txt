@@ -1,0 +1,652 @@
+{
+	"frames": {
+		"stunmaster_LegsACrawling0.png": {
+			"frame": {
+				"x": 0,
+				"y": 0,
+				"w": 28,
+				"h": 14
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 28,
+				"h": 14
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 28,
+				"h": 14
+			}
+		},
+		"stunmaster_LegsACrawling1.png": {
+			"frame": {
+				"x": 0,
+				"y": 14,
+				"w": 28,
+				"h": 14
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 28,
+				"h": 14
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 28,
+				"h": 14
+			}
+		},
+		"stunmaster_LegsACrawling2.png": {
+			"frame": {
+				"x": 0,
+				"y": 28,
+				"w": 28,
+				"h": 14
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 28,
+				"h": 14
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 28,
+				"h": 14
+			}
+		},
+		"stunmaster_LegsACrawling3.png": {
+			"frame": {
+				"x": 0,
+				"y": 42,
+				"w": 28,
+				"h": 14
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 28,
+				"h": 14
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 28,
+				"h": 14
+			}
+		},
+		"stunmaster_LegsACrawling4.png": {
+			"frame": {
+				"x": 28,
+				"y": 0,
+				"w": 28,
+				"h": 14
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 28,
+				"h": 14
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 28,
+				"h": 14
+			}
+		},
+		"stunmaster_LegsACrawling5.png": {
+			"frame": {
+				"x": 28,
+				"y": 14,
+				"w": 28,
+				"h": 14
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 28,
+				"h": 14
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 28,
+				"h": 14
+			}
+		},
+		"stunmaster_LegsAClimbing0.png": {
+			"frame": {
+				"x": 28,
+				"y": 28,
+				"w": 22,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 22,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 22,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsAClimbing1.png": {
+			"frame": {
+				"x": 28,
+				"y": 41,
+				"w": 22,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 22,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 22,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsAClimbing2.png": {
+			"frame": {
+				"x": 28,
+				"y": 54,
+				"w": 22,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 22,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 22,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsAClimbing3.png": {
+			"frame": {
+				"x": 0,
+				"y": 56,
+				"w": 22,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 22,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 22,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsAClimbing4.png": {
+			"frame": {
+				"x": 56,
+				"y": 0,
+				"w": 22,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 22,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 22,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsAClimbing5.png": {
+			"frame": {
+				"x": 56,
+				"y": 13,
+				"w": 22,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 22,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 22,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsAClimbing6.png": {
+			"frame": {
+				"x": 56,
+				"y": 26,
+				"w": 22,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 22,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 22,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsA0.png": {
+			"frame": {
+				"x": 56,
+				"y": 39,
+				"w": 18,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsA1.png": {
+			"frame": {
+				"x": 56,
+				"y": 52,
+				"w": 18,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsA2.png": {
+			"frame": {
+				"x": 56,
+				"y": 65,
+				"w": 18,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsA3.png": {
+			"frame": {
+				"x": 56,
+				"y": 78,
+				"w": 18,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsA4.png": {
+			"frame": {
+				"x": 28,
+				"y": 67,
+				"w": 18,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsA5.png": {
+			"frame": {
+				"x": 28,
+				"y": 80,
+				"w": 18,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsA6.png": {
+			"frame": {
+				"x": 0,
+				"y": 69,
+				"w": 18,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsAAir0.png": {
+			"frame": {
+				"x": 0,
+				"y": 82,
+				"w": 18,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsAAir1.png": {
+			"frame": {
+				"x": 78,
+				"y": 0,
+				"w": 18,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsAOnPole0.png": {
+			"frame": {
+				"x": 78,
+				"y": 13,
+				"w": 18,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsAOnPole1.png": {
+			"frame": {
+				"x": 78,
+				"y": 26,
+				"w": 18,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsAOnPole2.png": {
+			"frame": {
+				"x": 78,
+				"y": 39,
+				"w": 18,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsAOnPole3.png": {
+			"frame": {
+				"x": 78,
+				"y": 52,
+				"w": 18,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsAOnPole4.png": {
+			"frame": {
+				"x": 78,
+				"y": 65,
+				"w": 18,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsAOnPole5.png": {
+			"frame": {
+				"x": 78,
+				"y": 78,
+				"w": 18,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsAOnPole6.png": {
+			"frame": {
+				"x": 56,
+				"y": 91,
+				"w": 18,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsAPole.png": {
+			"frame": {
+				"x": 28,
+				"y": 93,
+				"w": 18,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsAWall.png": {
+			"frame": {
+				"x": 0,
+				"y": 95,
+				"w": 18,
+				"h": 13
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 13
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 13
+			}
+		},
+		"stunmaster_LegsAVerticalPole.png": {
+			"frame": {
+				"x": 0,
+				"y": 108,
+				"w": 7,
+				"h": 10
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 7,
+				"h": 10
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 7,
+				"h": 10
+			}
+		}
+	},
+	"meta": {
+		"app": "https://goofybox-studios.github.io/tools/texture_packer",
+		"image": "stunmaster_legs",
+		"size": {
+			"w": 96,
+			"h": 118
+		}
+	}
+}

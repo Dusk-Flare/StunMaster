@@ -7,7 +7,7 @@
     "custom_colors": [
       { "name": "Body", "story": "FFFFFF" },
       { "name": "Eyes", "story": "FF0000" },
-      { "name":  "Markings", "story": "fe7700" }
+      { "name": "Markings", "story": "fe7700" }
     ],
     "start_room": "OE_S03",
     "the_mark": true,

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
-    <LangVersion>13</LangVersion>
+    <LangVersion>14</LangVersion>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <OutputPath>../mod/newest/plugins</OutputPath>
     <PathMap>$(MSBuildProjectDirectory)=/$(SolutionName)</PathMap>
@@ -17,11 +17,63 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="../lib/*.dll">
+    <Reference Include="..\lib\Assembly-CSharp-firstpass.dll">
       <Private>false</Private>
     </Reference>
+    <Reference Include="..\lib\BepInEx.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="..\lib\HOOKS-Assembly-CSharp.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="..\lib\Mono.Cecil.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="..\lib\Mono.Cecil.Rocks.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="..\lib\MonoMod.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="..\lib\MonoMod.RuntimeDetour.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="..\lib\MonoMod.Utils.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="..\lib\Newtonsoft.Json.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="..\lib\PUBLIC-Assembly-CSharp.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="..\lib\Rain Meadow.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="..\lib\Unity.Mathematics.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="..\lib\UnityEngine.CoreModule.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="..\lib\UnityEngine.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="ImprovedInput">
+      <HintPath>..\..\..\..\..\source\externalDLLs\InprovedInput\ImprovedInput.dll</HintPath>
+    </Reference>
+    <Reference Include="SlugBase">
+      <HintPath>..\..\..\..\..\source\externalDLLs\SlugBase\SlugBase.dll</HintPath>
+    </Reference>
   </ItemGroup>
-    
+
+  <ItemGroup>
+    <PackageReference Include="PolySharp" Version="1.16.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+	
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="Exists('$(RainWorldDir)')">
 		<ItemGroup>
 			<Assets Include="$(ProjectDir)../assets/**/*.*" />

@@ -1,23 +1,14 @@
 ﻿using Menu.Remix.MixedUI;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
-namespace StunMaster
+namespace StunMaster.Config
 {
     public class OptionsMenu : OptionInterface
     {
         public readonly Configurable<bool> LPC;
-
         private UIelement[] options;
+        public OptionsMenu() => LPC = config.Bind("LPC", true);
 
-        public OptionsMenu()
-        {
-            LPC = config.Bind("LPC", false);
-        }
 
         public override void Initialize()
         {
@@ -25,8 +16,8 @@ namespace StunMaster
             Tabs = [optionsTab];
 
             options = [
-                new OpCheckBox(LPC, new Vector2(0f, 475f)),
-                new OpLabel(new Vector2(0f, 500f), new Vector2(600f, 30f), "Legacy Stunmaster Powers?", FLabelAlignment.Left, true),
+                new OpCheckBox(LPC, new(0f, 475f)),
+                new OpLabel(new(0f, 500f), new(600f, 30f), "Disable Stun Powers", FLabelAlignment.Left, true),
             ];
 
             optionsTab.AddItems(options);

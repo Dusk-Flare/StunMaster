@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace StunMaster.StunCompat
 {
@@ -23,12 +20,12 @@ namespace StunMaster.StunCompat
         {
             try
             {
-                RainMeadow.RainMeadow.isArenaMode(out var arena);
+                RainMeadow.RainMeadow.isArenaMode(out RainMeadow.ArenaOnlineGameMode arena);
                 return !arena.countdownInitiatedHoldFire;
             }
-            catch 
-            { 
-                return false; 
+            catch
+            {
+                return false;
             }
         }
 

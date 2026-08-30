@@ -1,32 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StunMaster.StunLogic
+﻿namespace StunMaster.StunLogic
 {
-    internal static class PebblesExternals
+    public static class PebblesExternals
     {
-        internal static void Apply()
-        {
-            On.SSOracleSwarmer.Update += NeuronOverride;
-            //On.SSOracleBehavior.NewAction += CustomPebblesDialogue;
-        }
-
-        private static void NeuronOverride(On.SSOracleSwarmer.orig_Update orig, SSOracleSwarmer self, bool eu)
+        public static void NeuronOverride(On.SSOracleSwarmer.orig_Update orig, SSOracleSwarmer self, bool eu)
         {
             orig(self, eu);
-            Player player = self.grabbedBy.Count > 0 ? self.grabbedBy[0].grabber as Player : null;
+            Player player = null;
+            if (self.grabbedBy.Count > 0 && self.grabbedBy[0].grabber is Player) player = self.grabbedBy[0].grabber as Player;
             NeuronPathing.NeuronControll(self, player);
         }
-        private static void CustomPebblesDialogue(On.SSOracleBehavior.orig_NewAction orig, SSOracleBehavior self, SSOracleBehavior.Action action)
+        public static void CustomPebblesDialogue(On.SSOracleBehavior.orig_NewAction orig, SSOracleBehavior self, SSOracleBehavior.Action action)
         {
             if (!StunDialog.ReadyToThrowOut.ContainsKey(self)) StunDialog.ReadyToThrowOut[self] = false;
             orig(self, action);
 
-            var metBefore = self.oracle?.room?.game?.GetStorySession?.saveState?.miscWorldSaveData?.SSaiThrowOuts;
-            if (self.oracle.room.game.StoryCharacter.value != Plugin.stunMasterID || metBefore != null && metBefore > 0) return;
+            int? metBefore = self.oracle?.room?.game?.GetStorySession?.saveState?.miscWorldSaveData?.SSaiThrowOuts;
+            if (self.oracle.room.game.StoryCharacter.value != PluginData.stunMasterID || metBefore != null && metBefore > 0) return;
 
             StunDialog.MeetPebbles(self);
             if (StunDialog.ReadyToThrowOut.TryGetValue(self, out bool shouldThrow) && shouldThrow)

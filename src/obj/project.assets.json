@@ -1,31 +1,52 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
-    ".NETFramework,Version=v4.8": {}
+    "net48": {
+      "PolySharp/1.16.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/PolySharp.targets": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "PolySharp/1.16.0": {
+      "sha512": "3kdIIceBPumwjw279FuiVMfVENT2cGASXJgcigdySsbX2dJB8ofUgG6i47yqF/k1qu6fvNR3csrSekZPviR6kQ==",
+      "type": "package",
+      "path": "polysharp/1.16.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "analyzers/dotnet/cs/PolySharp.SourceGenerators.dll",
+        "build/PolySharp.targets",
+        "buildTransitive/PolySharp.targets",
+        "icon.png",
+        "polysharp.1.16.0.nupkg.sha512",
+        "polysharp.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.8": []
+    "net48": [
+      "PolySharp >= 1.16.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\redst\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\redst\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunMaster.csproj",
+      "projectUniqueName": "C:\\Users\\redst\\OneDrive\\Documents\\GitHub\\StunMaster\\src\\StunMaster.csproj",
       "projectName": "StunMaster",
-      "projectPath": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\StunMaster.csproj",
+      "projectPath": "C:\\Users\\redst\\OneDrive\\Documents\\GitHub\\StunMaster\\src\\StunMaster.csproj",
       "packagesPath": "C:\\Users\\redst\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\redst\\OneDrive\\Documentos\\GitHub\\StunMaster\\src\\obj\\",
+      "outputPath": "C:\\Users\\redst\\OneDrive\\Documents\\GitHub\\StunMaster\\src\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\redst\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -37,6 +58,7 @@
       },
       "frameworks": {
         "net48": {
+          "framework": "net48",
           "targetAlias": "net48",
           "projectReferences": {}
         }
@@ -51,12 +73,21 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
       "net48": {
+        "framework": "net48",
         "targetAlias": "net48",
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
+        "dependencies": {
+          "PolySharp": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.16.0, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

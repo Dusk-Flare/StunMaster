@@ -1,0 +1,312 @@
+{
+	"frames": {
+		"stunmaster_PlayerArm0.png": {
+			"frame": {
+				"x": 0,
+				"y": 0,
+				"w": 28,
+				"h": 8
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 28,
+				"h": 8
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 28,
+				"h": 8
+			}
+		},
+		"stunmaster_PlayerArm1.png": {
+			"frame": {
+				"x": 0,
+				"y": 8,
+				"w": 28,
+				"h": 8
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 28,
+				"h": 8
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 28,
+				"h": 8
+			}
+		},
+		"stunmaster_PlayerArm2.png": {
+			"frame": {
+				"x": 0,
+				"y": 16,
+				"w": 28,
+				"h": 8
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 28,
+				"h": 8
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 28,
+				"h": 8
+			}
+		},
+		"stunmaster_PlayerArm3.png": {
+			"frame": {
+				"x": 0,
+				"y": 24,
+				"w": 28,
+				"h": 8
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 28,
+				"h": 8
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 28,
+				"h": 8
+			}
+		},
+		"stunmaster_PlayerArm4.png": {
+			"frame": {
+				"x": 0,
+				"y": 32,
+				"w": 28,
+				"h": 8
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 28,
+				"h": 8
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 28,
+				"h": 8
+			}
+		},
+		"stunmaster_PlayerArm5.png": {
+			"frame": {
+				"x": 0,
+				"y": 40,
+				"w": 28,
+				"h": 8
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 28,
+				"h": 8
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 28,
+				"h": 8
+			}
+		},
+		"stunmaster_PlayerArm6.png": {
+			"frame": {
+				"x": 0,
+				"y": 48,
+				"w": 28,
+				"h": 8
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 28,
+				"h": 8
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 28,
+				"h": 8
+			}
+		},
+		"stunmaster_PlayerArm7.png": {
+			"frame": {
+				"x": 28,
+				"y": 0,
+				"w": 28,
+				"h": 8
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 28,
+				"h": 8
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 28,
+				"h": 8
+			}
+		},
+		"stunmaster_PlayerArm8.png": {
+			"frame": {
+				"x": 28,
+				"y": 8,
+				"w": 28,
+				"h": 8
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 28,
+				"h": 8
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 28,
+				"h": 8
+			}
+		},
+		"stunmaster_PlayerArm9.png": {
+			"frame": {
+				"x": 28,
+				"y": 16,
+				"w": 28,
+				"h": 8
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 28,
+				"h": 8
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 28,
+				"h": 8
+			}
+		},
+		"stunmaster_PlayerArm10.png": {
+			"frame": {
+				"x": 28,
+				"y": 24,
+				"w": 28,
+				"h": 8
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 28,
+				"h": 8
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 28,
+				"h": 8
+			}
+		},
+		"stunmaster_PlayerArm11.png": {
+			"frame": {
+				"x": 28,
+				"y": 32,
+				"w": 28,
+				"h": 8
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 28,
+				"h": 8
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 28,
+				"h": 8
+			}
+		},
+		"stunmaster_PlayerArm12.png": {
+			"frame": {
+				"x": 28,
+				"y": 40,
+				"w": 28,
+				"h": 8
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 28,
+				"h": 8
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 28,
+				"h": 8
+			}
+		},
+		"stunmaster_OnTopOfTerrainHand.png": {
+			"frame": {
+				"x": 56,
+				"y": 0,
+				"w": 5,
+				"h": 4
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 5,
+				"h": 4
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 5,
+				"h": 4
+			}
+		},
+		"stunmaster_OnTopOfTerrainHand2.png": {
+			"frame": {
+				"x": 0,
+				"y": 56,
+				"w": 4,
+				"h": 3
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 4,
+				"h": 3
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 4,
+				"h": 3
+			}
+		}
+	},
+	"meta": {
+		"app": "https://goofybox-studios.github.io/tools/texture_packer",
+		"image": "stunmaster_arm",
+		"size": {
+			"w": 61,
+			"h": 59
+		}
+	}
+}

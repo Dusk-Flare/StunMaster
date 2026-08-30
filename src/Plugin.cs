@@ -1,14 +1,13 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
 using MonoMod.RuntimeDetour;
-using SlugBase;
+using StunMaster.Config;
+using StunMaster.Hooks;
+using StunMaster.StunCat;
 using StunMaster.StunCompat;
-using StunMaster.StunLogic;
 using System;
-using System.Collections.Generic;
 using System.Reflection;
 using System.Security.Permissions;
-using UnityEngine;
 
 
 #pragma warning disable CS0618
@@ -17,60 +16,55 @@ using UnityEngine;
 
 namespace StunMaster;
 
-[BepInPlugin("com.author.stunmaster", "Stun Master", "0.1.0")]
+public static class PluginData
+{
+    public const string stunMasterID = "stunmaster";
+    public const string GUID = "com.lanta.stunmaster";
+    public const string ModName = "Stun Master";
+    public const string Version = "0.1.9";
+}
+
+[BepInPlugin(PluginData.GUID, PluginData.ModName, PluginData.Version)]
 sealed class Plugin : BaseUnityPlugin
 {
     public static new ManualLogSource Logger;
-    public static string stunMasterID = "stunmaster";
     public static AbstractPhysicalObject.AbstractObjectType stunSpear = new("StunSpear", true);
     public static ReturnData OnlineData;
-    public static Dictionary<Player, float> stunCooldowns = [];
     public static OptionsMenu OIinstance = new();
-    bool IsInit;
+    bool _init;
 
     public void OnEnable()
     {
         Logger = base.Logger;
         On.RainWorld.OnModsInit += OnModsInit;
-        On.Player.Update += PlayerUpdate;
-        StunPowers.Apply();
+        HookManager.Apply();
     }
 
-    private void OnModsInit(On.RainWorld.orig_OnModsInit orig, RainWorld self)
+    public void OnDisable()
+    {
+        On.RainWorld.OnModsInit -= OnModsInit;
+        HookManager.Remove();
+    }
+
+    public void OnModsInit(On.RainWorld.orig_OnModsInit orig, RainWorld self)
     {
         orig(self);
 
-        if (IsInit) return;
-        MachineConnector.SetRegisteredOI(stunMasterID, OIinstance);
+        if (_init) return;
+        MachineConnector.SetRegisteredOI(PluginData.stunMasterID, OIinstance);
         if (CompatibilityAccess.IsRainMeadowLoaded()) AddMeadowHooks();
-        IsInit = true;
+        LoadResources(self);
+        _init = true;
     }
-    private void PlayerUpdate(On.Player.orig_Update orig, Player self, bool eu)
+
+    public void LoadResources(RainWorld rainWorld)
     {
-        orig(self, eu);
-        bool legacy = OIinstance.LPC.Value;
-        if (OnlineData is not null)
-        {
-            legacy = OnlineData.LegacyPowers;
-        }
-        Player.InputPackage currInput = self.input[0];
-        Player.InputPackage prevInput = self.input[1];
-        if (!stunCooldowns.ContainsKey(self)) stunCooldowns[self] = 0f;
-        if (stunCooldowns.ContainsKey(self) && stunCooldowns[self] > 0f) stunCooldowns[self]--;
-
-        if (self.slugcatStats.name.value == stunMasterID && legacy)
-        {
-            if (currInput.jmp && currInput.pckp && (!prevInput.jmp || !prevInput.pckp))
-            {
-                bool isStory = self.room?.game.session is StoryGameSession;
-
-                if (isStory) LegacyStun.TriggerStoryStun(self, 7, 2);
-                else LegacyStun.TriggerArenaStun(self, 7, 3, 2);
-            }
-        }
+        Lanta.stunForehead ??= Futile.atlasManager.LoadAtlas("atlases/stunmaster_face");
+        Lanta.stunArm ??= Futile.atlasManager.LoadAtlas("atlases/stunmaster_arm");
+        Lanta.stunLegs ??= Futile.atlasManager.LoadAtlas("atlases/stunmaster_legs");
     }
 
-    private void AddMeadowHooks()
+    public void AddMeadowHooks()
     {
         new Hook(typeof(RainMeadow.Lobby).GetMethod("ActivateImpl", BindingFlags.NonPublic | BindingFlags.Instance), (Action<RainMeadow.Lobby> orig, RainMeadow.Lobby self) =>
         {
