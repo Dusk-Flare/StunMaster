@@ -7,21 +7,14 @@ namespace StunMaster.Utils
     public static class StunInputs
     {
         public static StunCooldowns StunEntries = new();
-        public static bool StunInput(StunPlayer player) => player.Instance.JustPressed(Plugin.stunTrigger);
-        public static void Update(StunPlayer player, bool legacy)
+        public static bool StunInput(Player player) => player.JustPressed(Plugin.stunTrigger);
+        public static bool IsStunMaster(Player player) => player.slugcatStats.name.value != PluginData.stunMasterID;
+        public static void Update(Player player, bool legacy)
         {
             StunEntries.Update(player);
-            
-            if (player.Stats.name.value == PluginData.stunMasterID && legacy)
-            {
-                if (StunInput(player))
-                {
-                    bool isStory = player.Room?.game.session is StoryGameSession;
-
-                    if (isStory) player.TriggerStoryStun(7, 2);
-                    else player.TriggerArenaStun(7, 3, 2);
-                }
-            }
+            if (!IsStunMaster(player) || !StunInput(player) || !legacy) return;
+            if (player.room?.game.session is StoryGameSession) player.TriggerStoryStun(7, 2);
+            else player.TriggerArenaStun(7, 3, 2);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="BuildVariables.targets" />
 
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
@@ -80,5 +81,9 @@
 		</ItemGroup>
 		<Copy SourceFiles="@(Assets)" DestinationFiles="$(RainWorldDir)/RainWorld_Data/StreamingAssets/mods/$(ProjectName)/%(RecursiveDir)%(Filename)%(Extension)" />
 		<Copy SourceFiles="$(TargetDir)$(ProjectName).dll;$(TargetDir)$(ProjectName).pdb" DestinationFolder="$(RainWorldDir)/RainWorld_Data/StreamingAssets/mods/$(ProjectName)/plugins" />
+		<MakeDir Directories="$(TargetDir)_tempZip/$(TargetName)" />
+		<Copy SourceFiles="@(Assets)" DestinationFiles="$(TargetDir)_tempZip/$(ProjectName)/%(RecursiveDir)%(Filename)%(Extension)" />
+		<Copy SourceFiles="$(TargetDir)$(ProjectName).dll;$(TargetDir)$(ProjectName).pdb" DestinationFolder="$(TargetDir)_tempZip/$(ProjectName)/plugins" />
+		<ZipDirectory SourceDirectory="$(TargetDir)_tempZip\" DestinationFile="$(ReleasePath)\$(TargetName).zip" Overwrite="true" />
 	</Target>
 </Project>

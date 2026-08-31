@@ -55,7 +55,8 @@ sealed class Plugin : BaseUnityPlugin
 
         if (_init) return;
         MachineConnector.SetRegisteredOI(PluginData.stunMasterID, OIinstance);
-        if (CompatibilityAccess.IsRainMeadowLoaded()) AddMeadowHooks();
+        if (CompatibilityAccess.IsMeadowLoaded) AddMeadowHooks();
+        Logger.LogInfo(CompatibilityAccess.IsMeadowLoaded);
         LoadResources(self);
         _init = true;
     }
@@ -74,8 +75,8 @@ sealed class Plugin : BaseUnityPlugin
             orig(self);
             try
             {
-                CompatibilityAccess.PassOnlineData();
-                OnlineData = CompatibilityAccess.GetOnlineData();
+                IRainMeadow.PassOnlineData();
+                OnlineData = IRainMeadow.GetOnlineData();
             }
             catch (Exception except)
             {

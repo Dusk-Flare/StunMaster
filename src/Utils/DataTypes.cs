@@ -1,44 +1,40 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace StunMaster.Utils
 {
-    public record struct StunCooldowns(Dictionary<StunPlayer, float> Cooldowns) : IEnumerable<StunCooldowns.StunEntry>
+    public record struct StunCooldowns(Dictionary<Player, float> Cooldowns) : IEnumerable<StunCooldowns.StunEntry>
     {
-        public record struct StunEntry(KeyValuePair<StunPlayer, float> Entry)
+        public record struct StunEntry(KeyValuePair<Player, float> Entry)
         {
-            public StunPlayer Player => Entry.Key;
+            public Player Player => Entry.Key;
             public float CoolDown => Entry.Value;
-            public static implicit operator StunEntry(KeyValuePair<StunPlayer, float> entry) => new(entry);
-            public static implicit operator KeyValuePair<StunPlayer, float>(StunEntry entry) => entry.Entry;
+            public static implicit operator StunEntry(KeyValuePair<Player, float> entry) => new(entry);
+            public static implicit operator KeyValuePair<Player, float>(StunEntry entry) => entry.Entry;
         }
         public StunCooldowns() : this([]) { }
-        public bool Contains(StunPlayer player) => Cooldowns.ContainsKey(player);
+        public bool Contains(Player player) => Cooldowns.ContainsKey(player);
 
         public readonly float this[Player player]
         {
             get => Cooldowns[player];
-            set
-            {
-                Cooldowns[player] = value;
-            }
+            set => Cooldowns[player] = value;
         }
-        public bool TryGetStun(StunPlayer player, out float stunTrime) => Cooldowns.TryGetValue(player, out stunTrime);
-        public void Stun(StunPlayer player, float stunTime) => Cooldowns[player] = stunTime;
-        public float GetOrStun(StunPlayer player, float stunTime)
+        public bool TryGetStun(Player player, out float stunTrime) => Cooldowns.TryGetValue(player, out stunTrime);
+        public void Stun(Player player, float stunTime)
         {
-            if (!TryGetStun(player, out float stunTicks) || stunTicks <= 0) Stun(player, stunTime);
-            return Cooldowns[player];
+            if(Contains(player)) Cooldowns.Remove(player);
+            Cooldowns.Add(player, stunTime);
+            Plugin.Logger.LogInfo($"Stun {player} set to {stunTime}");
         }
 
-        public void Update(StunPlayer player)
+        public void Update(Player player)
         {
-            if (GetOrStun(player, 0) > 0) Cooldowns[player]--;
-        }
-
-        public void Update()
-        {
-            foreach (StunPlayer player in Cooldowns.Keys) Update(player);
+            if (!Contains(player)) return;
+            if (Cooldowns[player] > 0) Plugin.Logger.LogInfo(Cooldowns[player]);
+            if (Cooldowns[player] != 0)  Cooldowns[player] = Mathf.Max(0, Cooldowns[player] - 1);
+            else Cooldowns.Remove(player);
         }
 
         public IEnumerator<StunEntry> GetEnumerator()

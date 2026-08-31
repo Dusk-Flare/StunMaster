@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<!--If trying to build this project, please make sure the correct directory to your Rain World folder and place to export a zip file as listed below:-->
+		<RainWorldDir>Path to the game itself</RainWorldDir>
+		<ReleasePath>Path where to export the build</ReleasePath>
+	</PropertyGroup>
+</Project>
