@@ -32,7 +32,7 @@ namespace StunMaster.StunCompat
             try
             {
                 OnlineCreature creature = source.abstractCreature.GetOnlineCreature();
-                OnlineManager.mePlayer?.InvokeRPC(ReceiveStunUpdate, [creature, stunRadius]);
+                creature?.BroadcastRPCInRoom(ReceiveStunUpdate, creature, stunRadius);
             }
             catch(Exception e)
             {
