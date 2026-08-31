@@ -7,5 +7,5 @@
   "requirements": [ "slime-cubed.slugbase", "improved-input-config", "stunfall" ],
   "requirements_names": [ "SlugBase", "Improved Input Config", "Stun Fall" ],
   "tags": [ "Custom Slugcat" ],
-  "version": "0.1.9"
+  "version": "0.2.0"
 }

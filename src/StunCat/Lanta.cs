@@ -71,6 +71,7 @@ namespace StunMaster.StunCat
                     newSprite.RemoveFromContainer();
                     baseSprite.container.AddChild(newSprite);
                 }
+                newSprite.MoveToBack();
                 newSprite.MoveInFrontOfOtherNode(baseSprite);
                 newSprite._textureRect = baseSprite.textureRect;
                 newSprite.scaleX = baseSprite.scaleX;

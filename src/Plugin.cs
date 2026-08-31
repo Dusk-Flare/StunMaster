@@ -23,7 +23,7 @@ public static class PluginData
     public const string stunMasterID = "stunmaster";
     public const string GUID = "com.lanta.stunmaster";
     public const string ModName = "Stun Master";
-    public const string Version = "0.1.9";
+    public const string Version = "0.2.0";
 }
 
 [BepInPlugin(PluginData.GUID, PluginData.ModName, PluginData.Version)]

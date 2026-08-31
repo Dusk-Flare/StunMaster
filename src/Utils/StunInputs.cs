@@ -8,7 +8,7 @@ namespace StunMaster.Utils
     {
         public static StunCooldowns StunEntries = new();
         public static bool StunInput(Player player) => player.JustPressed(Plugin.stunTrigger);
-        public static bool IsStunMaster(Player player) => player.slugcatStats.name.value != PluginData.stunMasterID;
+        public static bool IsStunMaster(Player player) => player.slugcatStats.name.value == PluginData.stunMasterID;
         public static void Update(Player player, bool legacy)
         {
             StunEntries.Update(player);
