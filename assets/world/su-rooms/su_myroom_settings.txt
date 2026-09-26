@@ -1,0 +1,4 @@
+Palette: 10
+Effects: Darkness-0-23-73, DayNight-0-23-126, 
+PlacedObjects: LightBeam><225.1907><45.68964><216~676~291~679~499~0~-342~-15~0.75~1~0~1~None~0~0, LanternOnStick><420.8215><143.6599><-54~-132, LanternOnStick><435.7274><223.1987><121~-220, LanternOnStick><536.2101><182.804><-86~-189, ScavengerTreasury><476.8943><48.61159><330~0, 
+FadePalette: 0, 0.1521739

@@ -1,0 +1,7 @@
+[MERGE]
+[REFERENCE]SU_A63: 822.4827><84.31017><752.6138><259.8401><1><Outskirts
+[IMAGE]map_su_myroom
+SU_myroom: 865.2679><-126.6964><761.1608><101.1607><1><><48><35
+
+Connection: SU_A63,SU_myroom,29,2,17,29,3,1
+[ENDMERGE]

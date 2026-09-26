@@ -1,0 +1,2 @@
+Template: NONE
+Effects: CliffSideEffect-1-20-20, 

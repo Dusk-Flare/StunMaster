@@ -1,0 +1,8 @@
+Template: oe_settingstemplate_ruins
+RainIntensity: 0.2260868
+RumbleIntensity: 0.04347826
+Clouds: 0.8260869
+Palette: 14
+Effects: DayNight-0.4021739-743-575, Moth-0.7173913-270-197, BorderPushBack-0-20-20, 
+PlacedObjects: LightBeam><214.8057><462.7025><239~536~1314~171~1198~-387~0~0~0.4652173~0.2391304~1~1~None~0~0, DayNightSettings><776.026><503.5517><8~20.66025~70~10, 
+FadePalette: 53, 1

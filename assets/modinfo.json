@@ -6,6 +6,7 @@
   "name": "Stun Master",
   "requirements": [ "slime-cubed.slugbase", "improved-input-config", "stunfall" ],
   "requirements_names": [ "SlugBase", "Improved Input Config", "Stun Fall" ],
+  "priorities": [ "henpemaz_rainmeadow, moreslugcats" ],
   "tags": [ "Custom Slugcat" ],
   "version": "0.2.0"
 }

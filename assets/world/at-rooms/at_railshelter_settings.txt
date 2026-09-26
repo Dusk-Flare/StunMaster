@@ -1,0 +1,7 @@
+Template: NONE
+Palette: 2
+EffectColorA: 4
+EffectColorB: 18
+Effects: Darkness-0.3695652-20-20, 
+PlacedObjects: LanternOnStick><465.797><401.8056><78~-106, ShelterSpawnPoint><549.5065><248.5501><, 
+FadePalette: 8, 0.4130435

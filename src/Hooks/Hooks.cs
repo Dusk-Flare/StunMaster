@@ -6,11 +6,13 @@
         {
             ApplyGraphics();
             ApplyPebbles();
+            ApplyWorld();
         }
         public static void Remove()
         {
             RemoveGraphics();
             RemovePebbles();
+            RemoveWorld();
         }
     }
 }

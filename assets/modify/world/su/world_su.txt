@@ -1,0 +1,6 @@
+[MERGE]
+ROOMS
+SU_A63 : SU_B12, SU_A37, SU_myroom
+SU_myroom : SU_A63
+END ROOMS
+[ENDMERGE]

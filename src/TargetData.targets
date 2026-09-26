@@ -1,0 +1,31 @@
+﻿<Project>
+	<!--The following is an edited copy of the NuGet package BepInEx.PluginInfoProps (liscenced under the MIT License) for the purpose of this project-->
+    <Target Name="GenerateData" BeforeTargets="BeforeCompile;CoreCompile" Inputs="$(MSBuildAllProjects)" Outputs="$(IntermediateOutputPath)GeneratedFile.cs">
+        <PropertyGroup>
+            <GUID Condition="'$(GUID)' == ''">$(AssemblyName)</GUID>
+            <ModName Condition="'$(ModName)' == ''">$(Product)</ModName>
+            <ModVersion Condition="'$(ModVersion)' == ''">$(Version)</ModVersion>
+			<StunMasterID Condition="'$(StunMasterID)' == ''">stunmaster</StunMasterID>
+            <GeneratedText>
+				<![CDATA[
+namespace $(RootNamespace)
+{
+    public static class PluginData
+    {
+        public const string GUID = "$(GUID)"%3B
+        public const string ModName = "$(ModName)"%3B
+        public const string Version = "$(ModVersion)"%3B
+		public const string stunMasterID = "$(StunMasterID)"%3B
+    }
+}
+      ]]>
+			</GeneratedText>
+            <GeneratedFilePath>$(IntermediateOutputPath)PluginData.cs</GeneratedFilePath>
+        </PropertyGroup>
+        <ItemGroup>
+            <Compile Include="$(GeneratedFilePath)" />
+            <FileWrites Include="$(GeneratedFilePath)" />
+        </ItemGroup>
+        <WriteLinesToFile Lines="$(GeneratedText)" File="$(GeneratedFilePath)" WriteOnlyWhenDifferent="true" Overwrite="true" />
+    </Target>
+</Project>

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 namespace StunMaster.Utils
@@ -67,6 +68,40 @@ namespace StunMaster.Utils
         IEnumerator IEnumerable.GetEnumerator()
         {
             return ((IEnumerable)Original).GetEnumerator();
+        }
+    }
+
+    public class EffectTable : IEnumerable<KeyValuePair<string, RoomSettings.RoomEffect.Type>>
+    {
+        private Dictionary<string, RoomSettings.RoomEffect.Type> _effects = [];
+        public Dictionary<string, RoomSettings.RoomEffect.Type>.KeyCollection Keys  => _effects.Keys;
+        public Dictionary<string, RoomSettings.RoomEffect.Type>.ValueCollection Values  => _effects.Values;
+        public RoomSettings.RoomEffect.Type this[string name]
+        {
+            get 
+            {
+                if (!_effects.TryGetValue(name, out RoomSettings.RoomEffect.Type type)) return null;
+                return type;
+            }
+            set 
+            {  
+                _effects[name] = value; 
+            }
+        }
+
+        public void Register(string key, bool register = false)
+        {
+            this[key] ??= new(key, register);
+        }
+
+        public IEnumerator<KeyValuePair<string, RoomSettings.RoomEffect.Type>> GetEnumerator()
+        {
+            return ((IEnumerable<KeyValuePair<string, RoomSettings.RoomEffect.Type>>)_effects).GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return ((IEnumerable)_effects).GetEnumerator();
         }
     }
 }

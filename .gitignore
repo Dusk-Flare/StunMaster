@@ -403,4 +403,6 @@ mod/newest/plugins/
 /src/.vs
 /src/obj
 /mod
-src/BuildVariables.targets
+
+# Local build properties
+*.props

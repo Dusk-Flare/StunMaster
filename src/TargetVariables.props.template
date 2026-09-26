@@ -3,6 +3,7 @@
 	<PropertyGroup>
 		<!--If trying to build this project, please make sure the correct directory to your Rain World folder and place to export a zip file as listed below:-->
 		<RainWorldDir>Path to the game itself</RainWorldDir>
+		<externalLibPath>Path to the external DLLs (Dependencies)</externalLibPath>
 		<ReleasePath>Path where to export the build</ReleasePath>
 	</PropertyGroup>
 </Project>

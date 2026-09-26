@@ -1,0 +1,5 @@
+Template: oe_settingstemplate_ruinsinside
+DangerType: Flood
+Effects: Contrast-0.07608695-20-20, 
+PlacedObjects: ShelterSpawnPoint><551.5809><248.3931><, BrokenShelterWaterLevel><538.0139><255.6995><, LanternOnStick><390.7092><332.3042><-77~-47, 
+FadePalette: 8, 0.4021739

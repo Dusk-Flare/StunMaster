@@ -6,6 +6,7 @@ using StunMaster.Config;
 using StunMaster.Hooks;
 using StunMaster.StunCat;
 using StunMaster.StunCompat;
+using StunMaster.WorldEdit;
 using System;
 using System.Reflection;
 using System.Security.Permissions;
@@ -17,14 +18,6 @@ using UnityEngine;
 #pragma warning restore CS0618
 
 namespace StunMaster;
-
-public static class PluginData
-{
-    public const string stunMasterID = "stunmaster";
-    public const string GUID = "com.lanta.stunmaster";
-    public const string ModName = "Stun Master";
-    public const string Version = "0.2.0";
-}
 
 [BepInPlugin(PluginData.GUID, PluginData.ModName, PluginData.Version)]
 sealed class Plugin : BaseUnityPlugin
@@ -47,6 +40,7 @@ sealed class Plugin : BaseUnityPlugin
     {
         On.RainWorld.OnModsInit -= OnModsInit;
         HookManager.Remove();
+        RegisterEffect.UnregisterEnum();
     }
 
     public void OnModsInit(On.RainWorld.orig_OnModsInit orig, RainWorld self)
@@ -54,6 +48,7 @@ sealed class Plugin : BaseUnityPlugin
         orig(self);
 
         if (_init) return;
+        RegisterEffect.RegisterEnum();
         MachineConnector.SetRegisteredOI(PluginData.stunMasterID, OIinstance);
         if (CompatibilityAccess.IsMeadowLoaded) AddMeadowHooks();
         Logger.LogInfo(CompatibilityAccess.IsMeadowLoaded);
@@ -61,7 +56,7 @@ sealed class Plugin : BaseUnityPlugin
         _init = true;
     }
 
-    public void LoadResources(RainWorld rainWorld)
+    public void LoadResources(RainWorld _)
     {
         Lanta.stunForehead ??= Futile.atlasManager.LoadAtlas("atlases/stunmaster_face");
         Lanta.stunArm ??= Futile.atlasManager.LoadAtlas("atlases/stunmaster_arm");
