@@ -7,12 +7,14 @@
             ApplyGraphics();
             ApplyPebbles();
             ApplyWorld();
+            ApplyCreatures();
         }
         public static void Remove()
         {
             RemoveGraphics();
             RemovePebbles();
             RemoveWorld();
+            RemoveCreatures();
         }
     }
 }

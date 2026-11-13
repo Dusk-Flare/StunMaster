@@ -27,13 +27,11 @@ namespace StunMaster.Utils
         {
             if(Contains(player)) Cooldowns.Remove(player);
             Cooldowns.Add(player, stunTime);
-            Plugin.Logger.LogInfo($"Stun {player} set to {stunTime}");
         }
 
         public void Update(Player player)
         {
             if (!Contains(player)) return;
-            if (Cooldowns[player] > 0) Plugin.Logger.LogInfo(Cooldowns[player]);
             if (Cooldowns[player] != 0)  Cooldowns[player] = Mathf.Max(0, Cooldowns[player] - 1);
             else Cooldowns.Remove(player);
         }

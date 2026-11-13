@@ -8,7 +8,7 @@ namespace StunMaster.StunLogic
 
         public static void NeuronControll(SSOracleSwarmer self, Player controller)
         {
-            if (controller.slugcatStats.name.value == PluginData.stunMasterID)
+            if (controller?.slugcatStats.name.value == PluginData.stunMasterID)
             {
                 float baseSpeed = 5f;
                 float accel = 0.9f;

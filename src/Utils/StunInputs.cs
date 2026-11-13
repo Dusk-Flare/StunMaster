@@ -1,6 +1,5 @@
 ﻿using ImprovedInput;
 using StunMaster.StunCat;
-using UnityEngine;
 
 namespace StunMaster.Utils
 {
@@ -13,6 +12,7 @@ namespace StunMaster.Utils
         {
             StunEntries.Update(player);
             if (!IsStunMaster(player) || !StunInput(player) || !legacy) return;
+            Lanta.Drones.Remove(player);
             if (player.room?.game.session is StoryGameSession) player.TriggerStoryStun(7, 2);
             else player.TriggerArenaStun(7, 3, 2);
         }

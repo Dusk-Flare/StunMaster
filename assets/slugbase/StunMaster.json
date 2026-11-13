@@ -18,7 +18,7 @@
     "back_spear": true,
     "food_min": 6,
     "food_max": 8,
-    "world_state": [ "stunmaster" ],
+    "world_state": [ "stunTime" ],
     "loudness": 5,
     "throw_skill": 0,
     "guide_overseer": 4,

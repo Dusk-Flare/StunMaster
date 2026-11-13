@@ -4,12 +4,15 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using SlugBase.DataTypes;
 using UnityEngine;
+using StunMaster.WorldEdit.Creatures;
+using StunMaster.EngeneerDrone;
 
 namespace StunMaster.StunCat
 {
     public static class Lanta
     {
         public static ConditionalWeakTable<PlayerGraphics, FAtlasIndex> Table = new();
+        public static ConditionalWeakTable<Player, AbstractCreature> Drones = new();
         public static ConditionalWeakTable<string, FAtlas> SpriteTable = new();
         public static FAtlas stunForehead;
         public static FAtlas stunArm;
@@ -21,6 +24,36 @@ namespace StunMaster.StunCat
             bool legacy = Plugin.OIinstance.LPC.Value;
             if (Plugin.OnlineData is not null) legacy = Plugin.OnlineData.LegacyPowers;
             StunInputs.Update(self, legacy);
+            LantaBot.DroneUpdate(self);
+            DroneUpdate(self, self.room);
+        }
+
+        public static void DroneUpdate(Player self, Room room)
+        {
+            if (self.slugcatStats.name.value != PluginData.stunMasterID || room == null) return; 
+            
+            if (!Drones.TryGetValue(self, out AbstractCreature abstractDrone) || abstractDrone == null)
+            {
+                Drones.Remove(self);
+                EntityID id = room.world.game.GetNewID();
+                CreatureTemplate template = StaticWorld.GetCreatureTemplate(Enums.CreatureTemplateType.Drone);
+                WorldCoordinate pos = room.GetWorldCoordinate(self.mainBodyChunk.pos);
+                abstractDrone = new AbstractCreature(room.world, template, null, pos, id);
+                room.abstractRoom.AddEntity(abstractDrone);
+                abstractDrone.RealizeInRoom();
+                Drones.Add(self, abstractDrone);
+            }
+            if (abstractDrone.realizedCreature != null)
+            {
+                (abstractDrone.abstractAI.RealAI as DroneAI).Owner ??= self;
+            }
+        }
+
+        public static SaveState GetOrInitiateSaveState(On.PlayerProgression.orig_GetOrInitiateSaveState orig, PlayerProgression self, SlugcatStats.Name saveStateNumber, RainWorldGame game, ProcessManager.MenuSetup setup, bool saveAsDeathOrQuit)
+        {
+            SaveState state = orig(self, saveStateNumber, game, setup, saveAsDeathOrQuit);
+            if (saveStateNumber.value == PluginData.stunMasterID) state.hasRobo = true;
+            return state;
         }
 
         public static void InitiateSprites(On.PlayerGraphics.orig_InitiateSprites orig, PlayerGraphics self, RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam)

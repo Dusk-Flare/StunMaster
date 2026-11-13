@@ -1,0 +1,32 @@
+{
+	"frames": {
+		"drone.png": {
+			"frame": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 24
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 24
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 24
+			}
+		}
+	},
+	"meta": {
+		"app": "https://goofybox-studios.github.io/tools/texture_packer",
+		"image": "droneIco",
+		"size": {
+			"w": 18,
+			"h": 24
+		}
+	}
+}

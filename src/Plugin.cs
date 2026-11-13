@@ -3,10 +3,13 @@ using BepInEx.Logging;
 using ImprovedInput;
 using MonoMod.RuntimeDetour;
 using StunMaster.Config;
+using StunMaster.EngeneerDrone;
 using StunMaster.Hooks;
 using StunMaster.StunCat;
 using StunMaster.StunCompat;
+using StunMaster.StunLogic;
 using StunMaster.WorldEdit;
+using StunMaster.WorldEdit.Creatures;
 using System;
 using System.Reflection;
 using System.Security.Permissions;
@@ -24,7 +27,7 @@ sealed class Plugin : BaseUnityPlugin
 {
     public static new ManualLogSource Logger;
     public static readonly PlayerKeybind stunTrigger = PlayerKeybind.Register("stun:bind", PluginData.ModName, "StunAbility", KeyCode.C, KeyCode.JoystickButton5);
-    public static AbstractPhysicalObject.AbstractObjectType stunSpear = new("StunSpear", true);
+    public static Conversation.ID stunConvo = new("Stun_Greet", true);
     public static ReturnData OnlineData;
     public static OptionsMenu OIinstance = new();
     bool _init;
@@ -41,6 +44,7 @@ sealed class Plugin : BaseUnityPlugin
         On.RainWorld.OnModsInit -= OnModsInit;
         HookManager.Remove();
         RegisterEffect.UnregisterEnum();
+        Enums.UnRegister();
     }
 
     public void OnModsInit(On.RainWorld.orig_OnModsInit orig, RainWorld self)
@@ -48,7 +52,9 @@ sealed class Plugin : BaseUnityPlugin
         orig(self);
 
         if (_init) return;
+        StunDialog.Register();
         RegisterEffect.RegisterEnum();
+        Enums.Register();
         MachineConnector.SetRegisteredOI(PluginData.stunMasterID, OIinstance);
         if (CompatibilityAccess.IsMeadowLoaded) AddMeadowHooks();
         Logger.LogInfo(CompatibilityAccess.IsMeadowLoaded);
@@ -61,6 +67,8 @@ sealed class Plugin : BaseUnityPlugin
         Lanta.stunForehead ??= Futile.atlasManager.LoadAtlas("atlases/stunmaster_face");
         Lanta.stunArm ??= Futile.atlasManager.LoadAtlas("atlases/stunmaster_arm");
         Lanta.stunLegs ??= Futile.atlasManager.LoadAtlas("atlases/stunmaster_legs");
+        DroneGraphics.DroneSprite ??= Futile.atlasManager.LoadAtlas("atlases/drone");
+        Crits.DroneIcon ??= Futile.atlasManager.LoadAtlas("atlases/droneIco");
     }
 
     public void AddMeadowHooks()

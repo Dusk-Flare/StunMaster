@@ -1,0 +1,172 @@
+{
+	"frames": {
+		"drone0.png": {
+			"frame": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 23
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 23
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 23
+			}
+		},
+		"drone1.png": {
+			"frame": {
+				"x": 18,
+				"y": 0,
+				"w": 18,
+				"h": 23
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 23
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 23
+			}
+		},
+		"drone2.png": {
+			"frame": {
+				"x": 0,
+				"y": 23,
+				"w": 18,
+				"h": 23
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 23
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 23
+			}
+		},
+		"drone3.png": {
+			"frame": {
+				"x": 18,
+				"y": 23,
+				"w": 18,
+				"h": 23
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 23
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 23
+			}
+		},
+		"drone4.png": {
+			"frame": {
+				"x": 36,
+				"y": 0,
+				"w": 18,
+				"h": 23
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 23
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 23
+			}
+		},
+		"drone5.png": {
+			"frame": {
+				"x": 36,
+				"y": 23,
+				"w": 18,
+				"h": 23
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 23
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 23
+			}
+		},
+		"drone6.png": {
+			"frame": {
+				"x": 54,
+				"y": 0,
+				"w": 18,
+				"h": 23
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 23
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 23
+			}
+		},
+		"drone7.png": {
+			"frame": {
+				"x": 54,
+				"y": 23,
+				"w": 18,
+				"h": 23
+			},
+			"rotated": false,
+			"trimmed": false,
+			"sourceSize": {
+				"w": 18,
+				"h": 23
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 23
+			}
+		}
+	},
+	"meta": {
+		"app": "https://goofybox-studios.github.io/tools/texture_packer",
+		"image": "drone",
+		"size": {
+			"w": 72,
+			"h": 46
+		}
+	}
+}

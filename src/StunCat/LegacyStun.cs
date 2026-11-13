@@ -22,10 +22,8 @@ namespace StunMaster.StunCat
             int stunRadiusPixels = stunRadius * 20;
             if (!StunInputs.StunEntries.TryGetStun(self, out float currStun))
             {
-                Plugin.Logger.LogInfo($"Checking cooldown: {currStun}f remaining");
                 if (currStun > 0) return;
                 if (CompatibilityAccess.IsMeadowArena() && !CompatibilityAccess.IsArenaBattleEnabled()) return;
-                Plugin.Logger.LogInfo($"Setting cooldown to player as {stunCooldownFrames}");
                 StunInputs.StunEntries.Stun(self, stunCooldownFrames);
                 StunArea(self, stunRadiusPixels, stunDurationFrames);
             }
